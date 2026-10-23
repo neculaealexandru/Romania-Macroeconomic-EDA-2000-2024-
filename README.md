@@ -1,67 +1,34 @@
-# 📊 Romania Macroeconomic EDA (2000–2024)
+# Romania Macroeconomic EDA (2000-2024)
 
-An exploratory data analysis (EDA) of Romania's key macroeconomic indicators over a 24-year period, built with Python. This project applies statistical methods and data visualization techniques to identify economic trends, cycles, and structural patterns in the Romanian economy.
+An exploratory data analysis in Python that practices common macroeconomic analysis techniques on an illustrative dataset of Romania-like indicators.
 
-> **Data sources:** National Institute of Statistics (INS – TEMPO), Eurostat, National Bank of Romania (BNR)
+> **Note on data:** the dataset in this repository is illustrative. Values are approximate, entered manually and perturbed with random noise. They are not official statistics from INS, Eurostat or BNR, and the results should not be read as findings about the real Romanian economy. The goal of the project is the analysis workflow.
 
----
+## What the project covers
 
-## 🔍 What This Project Covers
+- GDP: nominal evolution and annual growth rates
+- Inflation: yearly trends with threshold markers
+- Unemployment: patterns around the 2009 crisis and COVID-19
+- Trade balance: exports vs. imports
+- Exchange rate: EUR/RON
+- Wages: nominal vs. real wage
+- Phillips curve: inflation vs. unemployment
+- Pearson correlation matrix across all variables
 
-- **GDP growth** — nominal evolution and annual growth rates (2000–2024)
-- **Inflation** — yearly CPI trends with critical threshold analysis
-- **Unemployment** — cyclical patterns across economic shocks (2009 crisis, COVID-19)
-- **Trade balance** — export vs. import dynamics and persistent trade deficit
-- **Exchange rate** — EUR/RON evolution over time
-- **Wages** — nominal vs. real salary comparison (purchasing power analysis)
-- **Phillips Curve** — relationship between inflation and unemployment
-- **Correlation matrix** — Pearson correlations between all macroeconomic variables
+## Project structure
 
----
-
-## 📁 Project Structure
-
-```
 romania-macro-eda/
-│
-├── romania_macro_eda.py          # Main Python script
-├── romania_macro_2000_2024.csv   # Processed dataset with derived indicators
-│
-├── fig1_dashboard_macro.png      # Main dashboard (6 indicators)
-├── fig2_corelatii_distributii.png # Correlation heatmap + distributions
-└── fig3_cicluri_economice.png    # Economic cycles & derived analysis
-```
+├── romania_macro_eda.py            # Main script
+├── romania_macro_2000_2024.csv     # Illustrative dataset with derived indicators
+├── fig1_dashboard_macro.png
+├── fig2_corelatii_distributii.png
+└── fig3_cicluri_economice.png
 
----
+## Tech stack
 
-## 📈 Key Findings
+Python, pandas, NumPy, matplotlib, seaborn, SciPy
 
-| Indicator | Value |
-|-----------|-------|
-| GDP growth (2000–2024) | ~8x increase |
-| Median inflation | 5.9% |
-| Peak inflation | 45.7% (2000) |
-| Minimum unemployment | 4.3% (2018) |
-| Avg. trade deficit | -5.6 bn EUR/year |
-| Real wage growth (2000–2024) | +43% |
-| GDP–Salary correlation | 0.993 |
+## Author
 
----
-
-## 🛠️ Tech Stack
-
-| Library | Usage |
-|---------|-------|
-|  | Data manipulation and aggregation |
-|  | Numerical computations |
-|  | Core visualizations and dashboards |
-|  | Correlation heatmap and styled plots |
-|  | Statistical analysis (Pearson, linear regression) |
-
----
-
-## 👤 Author
-
-**Alexandru Georgian Neculae**  
-Statistics & Data Science Student — Bucharest Academy of Economic Studies  
-Data Analysis Practic Student — National Institute of Statistics (INS Romania)  
+Alexandru Georgian Neculae
+Statistics and Economic Forecasting student, Bucharest Academy of Economic Studies (ASE)
